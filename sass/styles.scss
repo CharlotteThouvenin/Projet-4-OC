@@ -9,8 +9,15 @@ a {
     color: inherit;
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
 /**** Header ****/
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,34 +25,37 @@ header{
     align-items: center;
     box-shadow: 0px 2px 4px 0px #00000026;
 
-    i{
+    i {
         padding: 17px;
         font-size: 17px;
         color: #101010;
     }
-    h1{
+
+    h1 {
         font-family: Shrikhand, serif;
         font-size: 30px;
         font-style: italic;
         text-align: center;
         width: 100%;
     }
-    
+
 }
 
 /* Spécificité header page d'accueil */
 
-.body-index{
-    header{
-        i{
+.body-index {
+    header {
+        i {
             display: none;
         }
     }
 }
 
+/******************* Styles page accueil *******************/
+
 /**** Div localisation ****/
 
-.localisation{
+.localisation {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -54,13 +64,14 @@ header{
     font-size: 16px;
     font-weight: 500;
     background-color: #EAEAEA;
-    i{
+
+    i {
         padding-right: 15px;
     }
 }
 
 /**** Section Réserver et explorer ****/
-.reserver-et-explorer{
+.reserver-et-explorer {
     height: 287px;
     display: flex;
     flex-direction: column;
@@ -70,18 +81,17 @@ header{
     background-color: #F6F6F6;
     box-sizing: border-box;
 
-    h3{
-        font-size: 24px;
-        font-weight: 700;
+    h3 {
         text-align: center;
-        margin:0;
     }
-    p{
+
+    p {
         font-size: 18px;
         font-weight: 300;
         text-align: center;
     }
-    a{
+
+    a {
         width: 218px;
         height: 50px;
         border-radius: 25px;
@@ -97,6 +107,67 @@ header{
 }
 
 
+/**** Section Réserver et explorer ****/
+
+.fonctionnement {
+    height: 440px;
+    box-sizing: border-box;
+    padding: 48px 20px;
+
+    .les3etapes {
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 30px;
+
+        .etape-fonctionnement {
+            display: flex;
+            flex-direction: row;
+            
+
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                background-color: #9356DC;
+                color: #ffffff;
+                width: 24px;
+                height: 24px;
+                font-family: roboto, sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .etape-fonctionnement-content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 20px;
+                background-color: #F6F6F6;
+                box-shadow: 0px 4px 15px 0px #00000026;
+                width: 335px;
+                height: 72.38px;
+
+                i {
+                    color: #7E7E7E;
+                    background-color: inherit;
+                    padding: 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 /**** Footer ****/
 footer {
     background-color: #353535;
@@ -108,7 +179,7 @@ footer {
 
     h1 {
         font-family: Shrikhand, serif;
-        margin:0;
+        margin: 0;
         font-weight: 400;
         font-style: italic;
         font-size: 18px;
@@ -116,7 +187,7 @@ footer {
     }
 
     .footer-part {
-        margin:0;
+        margin: 0;
         font-size: 16px;
         padding-top: 7px;
 
@@ -125,7 +196,8 @@ footer {
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            i{
+
+            i {
                 padding-right: 10px;
             }
         }

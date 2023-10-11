@@ -10,6 +10,13 @@ a {
   color: inherit;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
 /**** Header ****/
 header {
   display: flex;
@@ -37,6 +44,7 @@ header h1 {
   display: none;
 }
 
+/******************* Styles page accueil *******************/
 /**** Div localisation ****/
 .localisation {
   display: flex;
@@ -64,10 +72,7 @@ header h1 {
   box-sizing: border-box;
 }
 .reserver-et-explorer h3 {
-  font-size: 24px;
-  font-weight: 700;
   text-align: center;
-  margin: 0;
 }
 .reserver-et-explorer p {
   font-size: 18px;
@@ -86,6 +91,52 @@ header h1 {
   color: white;
   font-weight: 500px;
   font-size: 16px;
+}
+
+/**** Section Réserver et explorer ****/
+.fonctionnement {
+  height: 440px;
+  box-sizing: border-box;
+  padding: 48px 20px;
+}
+.fonctionnement .les3etapes {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.fonctionnement .les3etapes .etape-fonctionnement {
+  display: flex;
+  flex-direction: row;
+}
+.fonctionnement .les3etapes .etape-fonctionnement i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #9356DC;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.fonctionnement .les3etapes .etape-fonctionnement .etape-fonctionnement-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  width: 335px;
+  height: 72.38px;
+}
+.fonctionnement .les3etapes .etape-fonctionnement .etape-fonctionnement-content i {
+  color: #7E7E7E;
+  background-color: inherit;
+  padding: 0px 20px;
 }
 
 /**** Footer ****/
