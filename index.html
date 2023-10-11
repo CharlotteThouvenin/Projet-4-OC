@@ -15,7 +15,7 @@
 
     <!--Header-->
     <header>
-        <i class="fa-solid fa-arrow-left"></i>
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <img src="./Images et textes Ohmyfood 2/images/logo/ohmyfood.png" alt="logo ohmyfood">
     </header>
 
@@ -31,19 +31,37 @@
         <section class="reserver-et-explorer">
             <h3>Réservez le menu qui vous convient</h3>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button type="button"><a href="#">Explorer nos restaurants</a></button>
+            <button type="button"><a href="#restaurants">Explorer nos restaurants</a></button>
         </section>
 
         <!--Section Fonctionnement-->
         <section class="fonctionnement">
             <h3>Fonctionnement</h3>
-            <div class="etape-fonctionnement"></div>
-            <div class="etape-fonctionnement"></div>
-            <div class="etape-fonctionnement"></div>
+            <div class="etape-fonctionnement">
+                <i class="fa-solid fa-1"></i>
+                <div class="etape-fonctionnement-content">
+                    <i class="fa-solid fa-mobile"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+            </div>
+            <div class="etape-fonctionnement">
+                <i class="fa-solid fa-2"></i>
+                <div class="etape-fonctionnement-content">
+                    <i class="fa-solid fa-list"></i>
+                    <p>Composez votre menu</p>
+                </div>
+            </div>
+            <div class="etape-fonctionnement">
+                <i class="fa-solid fa-3"></i>
+                <div class="etape-fonctionnement-content">
+                    <i class="fa-solid fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
         </section>
 
         <!--Section restaurants-->
-        <section class="restaurants">
+        <section class="restaurants" id="restaurants">
             <h3>Restaurants</h3>
             <div class="restaurants-cards">
                 <article>
@@ -55,7 +73,7 @@
                             <p>Ménilmontant</p>
                         </div>
                         <div class="card-heart">
-                            <i class="fa-light fa-heart"></i>
+                            <img src="./Images et textes Ohmyfood 2/images/Vectorcoeur.svg">
                         </div>
                     </div>
                 </article>
@@ -98,7 +116,7 @@
             </div>
 
         </section>
-        
+
     </main>
     <!--Footer-->
     <footer>
