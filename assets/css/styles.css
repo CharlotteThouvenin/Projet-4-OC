@@ -1,3 +1,45 @@
-*{
-    font-family: 'Roboto', sans-serif;
+@charset "UTF-8";
+/**** Général *****/
+body {
+  font-family: roboto, sans-serif;
+  margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/**** Footer ****/
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  padding: 22px 25px;
+}
+footer h1 {
+  font-family: Shrikhand, serif;
+  margin: 0;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+footer .footer-part {
+  margin: 0;
+  font-size: 16px;
+  padding-top: 7px;
+}
+footer .footer-part a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .footer-part a i {
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
