@@ -31,6 +31,11 @@ header h1 {
   width: 100%;
 }
 
+/* Spécificité header page d'accueil */
+.body-index header i {
+  display: none;
+}
+
 /**** Footer ****/
 footer {
   background-color: #353535;
