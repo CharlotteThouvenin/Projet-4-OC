@@ -9,6 +9,28 @@ a {
     color: inherit;
 }
 
+/**** Header ****/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 63px;
+    align-items: center;
+    i{
+        padding: 17px;
+        font-size: 17px;
+        color: #101010;
+    }
+    h1{
+        font-family: Shrikhand, serif;
+        font-size: 30px;
+        font-style: italic;
+        text-align: center;
+        width: 100%;
+    }
+    
+}
+
 /**** Footer ****/
 footer {
     background-color: #353535;
