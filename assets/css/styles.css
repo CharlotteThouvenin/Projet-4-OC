@@ -109,8 +109,9 @@ header h1 {
 .fonctionnement .les3etapes .etape-fonctionnement {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
-.fonctionnement .les3etapes .etape-fonctionnement i {
+.fonctionnement .les3etapes .etape-fonctionnement .etape-number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,6 +123,9 @@ header h1 {
   font-family: roboto, sans-serif;
   font-size: 14px;
   font-weight: 500;
+  margin-left: 10px;
+  z-index: 1;
+  position: absolute;
 }
 .fonctionnement .les3etapes .etape-fonctionnement .etape-fonctionnement-content {
   display: flex;
@@ -132,11 +136,16 @@ header h1 {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   width: 335px;
   height: 72.38px;
+  margin-left: 20px;
 }
 .fonctionnement .les3etapes .etape-fonctionnement .etape-fonctionnement-content i {
   color: #7E7E7E;
   background-color: inherit;
-  padding: 0px 20px;
+  padding: 0px 30px;
+}
+.fonctionnement .les3etapes .etape-fonctionnement .etape-fonctionnement-content p {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /**** Footer ****/
