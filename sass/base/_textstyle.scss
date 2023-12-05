@@ -1,0 +1,126 @@
+/********** Général **********/
+
+* {
+    font-family: roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.coeur{
+    font-size: 25px;
+}
+
+h2{
+    @include text-style(24px, 700);
+    margin:0;
+}
+
+/**** Header ****/
+
+.header{
+    i{
+        color: #101010;
+    }
+    h1{
+        @include logo(30px, center);
+        @media (min-width: 768.1px){
+            @include logo (34px, center);
+        }
+    }
+}
+
+/**** Footer ****/
+
+.footer{
+    color: white;
+
+    &__title{
+        @include logo(18px, left);
+    }
+}
+
+
+/********** page index.html **********/
+
+/**** Div localisation ****/
+.localisation{
+    color: #353535;
+    @include text-style(16px, 500);
+}
+
+/**** Section Réserver et explorer ****/
+
+.reserver-et-explorer{
+    h2{
+        @media (min-width: 768px){
+            @include text-style(40px, 700);
+        }
+    }
+    p {
+        @include text-style(18px, lighter);
+    }
+}
+
+/**** Section Fontionnement ****/
+
+.fonctionnement{
+    &__processus__etape__numero{
+        color: #ffffff;
+        @include text-style(14px, 500);
+    }
+    &__processus__etape__contenu{
+        i{
+            color: #7E7E7E;
+        }
+        
+        &__text{
+            h4{
+                @include text-style(18px, 700);
+            }
+            p {
+                @include text-style(16px, 500);
+             }
+        }
+    }
+}
+
+/**** Section restaurants ****/
+
+.card{
+    h4{
+        @include text-style(18px, 700)
+    }
+    p {
+        @include text-style(17px, 300)
+    }
+}
+
+
+/********** page restaurants **********/
+
+.menu{
+    &__title{
+        h1 {
+        @include logo (28px, left)
+    }
+    }
+    &__subtitle{
+        @include text-style(16px, lighter);
+    }
+    &__category{
+        h4 {
+            @include text-style(18px, 500);
+        }
+
+        p {
+            @include text-style(15px, 300);
+        }
+
+        &__plat__prix{
+            @include text-style(15px, 700);
+        }
+    }
+}

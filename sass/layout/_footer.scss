@@ -1,0 +1,61 @@
+/**** Footer ****/
+.footer {
+    background-color: $grey-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 22px 25px;
+    @media (min-width: 768.1px){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: end;
+        box-sizing: border-box;
+        padding:  40px 25px 25px 25px;
+        height: 114px;
+    }
+
+
+    &__title {
+        padding-bottom: 12px;
+        @media (min-width: 768.1px){
+            padding: 0 20px 0 40px;
+            transform: translateY(2px);
+        }
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768.1px){
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__part {
+            margin: 0;
+            font-size: 16px;
+            padding-top: 7px;
+            height: 20px;
+            @media (min-width: 768.1px){
+                padding: 0 20px;
+            }
+    
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 7px;
+                @media (min-width: 768.1px){
+                    padding: 0;
+                }
+    
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }   
+}

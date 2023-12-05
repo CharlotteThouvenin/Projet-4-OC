@@ -1,0 +1,119 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -40px 0px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    background-color: $grey-light;
+    width: 100%;
+    box-sizing: border-box;
+    @media (min-width: 1055px){
+        width: 1055px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 27px 0px 17px;
+        &_coeur{
+            padding-left: 25px;
+            &::after{
+                padding-left: 25px;
+            }
+        }
+        .coeur{
+            color:$grey-light;
+        }
+    }
+
+    &__subtitle {
+        padding-bottom: 10px;
+        span {
+            border-bottom: solid 3px $green-light;
+            padding-bottom: 5px;
+        }
+    }
+
+
+    &__category {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: end;
+        gap: 15px;
+        overflow: hidden;
+        padding: 10px 0;
+        box-sizing: border-box;
+        width: 100%;
+        
+
+        @media (min-width: 650px){
+            width: 634px;
+        }
+
+
+        &__plat {
+            display: grid;
+            grid-template-columns: calc(100% - 59px) 59px 59px;
+            align-items: flex-end;
+            @include card-radius();
+            @include card-shadow();
+            background-color: white;
+            height: 69px;
+            cursor: pointer;
+
+            
+            &__nom {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 5px;
+                padding: 12px 0px 12px 12px;
+                width: 100%;
+                h4{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    }
+                p{
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+        
+            }
+            
+            &__prix {
+                    width: 59px;
+                    text-align: center;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+    }
+
+    /** Animation menu **/
+
+.menu{
+    &__category{
+        opacity: 0;
+        animation: appear 1s linear 0s both;
+        &:nth-child(1){
+            animation-delay: 0s;
+        }
+        &:nth-child(2){
+            animation-delay: 0.1s;
+        }
+        &:nth-child(3){
+            animation-delay: 1.5s;
+        }
+        &:nth-child(4){
+            animation-delay: 2.5s;
+        }
+    }
+}
+
+

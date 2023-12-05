@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    @include card-radius();
+    @include card-shadow();
+    box-sizing: border-box;
+    @media (min-width: 768.1px){
+        width: 45%;
+        height: 251px;
+        margin-bottom: 30px;
+    }
+    @media (min-width: 1024px){
+        margin-bottom: 50px;
+    }
+
+    &__image {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        img {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        &__nouveau {
+            position: absolute;
+            margin: 10px;
+        }
+    }
+
+    &__contenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px;
+
+        &__text {
+            line-height: 20px;
+        }
+    }
+}

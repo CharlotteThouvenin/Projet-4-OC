@@ -1,0 +1,33 @@
+
+.coeur{
+    cursor: pointer;
+    position: relative;
+    text-shadow: 0 0 1px black;
+    z-index: 1;
+    color: white;
+    transition: text-shadow 400ms;
+        &:hover{
+            text-shadow: none;
+            &::after{
+                opacity:1;
+            }
+        }
+        &::after {
+            @include fontawesome ("\f004");
+            @include after-position;
+            @include gradientHeart;
+            text-shadow: 0 0 1px transparent;
+            transform: translateY(1px);
+            display: block;
+            width: auto;
+            height: auto;
+            opacity: 0;
+            z-index: 2;
+            transition: opacity 400ms ease-in;
+          }
+}
+
+
+
+
+

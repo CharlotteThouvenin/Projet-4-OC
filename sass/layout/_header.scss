@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 63px;
+    align-items: center;
+    background-color: white;
+    position: relative;
+
+
+    i {
+        padding: 17px;
+        font-size: 17px;
+        position: absolute;
+        transform: translateY(-23px);
+    }
+
+    h1 {
+        width: 100%;
+    }
+}
+
+/* Spécificité header page d'accueil */
+
+.body-index {
+    .header {
+        @include card-shadow;
+        &__link{
+            display: none;
+        }
+        
+    }
+}
